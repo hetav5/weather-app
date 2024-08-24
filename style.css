@@ -12,13 +12,10 @@ body{
 }
 .card{
     width: 100vw;
-    max-width: 470px;
     color: aliceblue;
-    border-radius: 8%;
     background: linear-gradient(135deg,#00feba,#5b548a);
     background-image: url("./images/sunny-bluesky.gif") ;
     background-size:cover ;
-    margin: 100px auto 100px;
     text-align: center;
     padding: 40px 35px;
     height: 100vh;
@@ -90,6 +87,6 @@ body{
 
 }
 
-.humidity,.wind{
+.humidity,.wind,.pressure,.visibility{
     font-size: 20px;
 }
