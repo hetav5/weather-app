@@ -8,9 +8,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="card">
+    <div class="search-box">
+        <input type="text" placeholder="Enter city name" spellcheck="false">
+        <button>
+            <span class="fa fa-search"></span>
+        </button>
+    </div>
+    
+    <div class="weather">
+        <h1 class="temp">36°C</h1>
+        <h2 class="city">Chennai</h2>
+        <!-- <img src="./images/sunny-bluesky.gif" class="weather-img"> -->
+         <div class="details">
+            <div class="col">
+                <img src="./images/fog.png" >
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>    
+            </div>
+            <div class="col">
+                <img src="./images/wind.png" >
+                <div>
+                    <p class="wind">20 km/h</p>
+                    <p>Wind Speed</p>
+                </div>    
+            </div>
+         </div>
+    </div>
+      
+</div>
+<script src="script.js"></script>
     
 </body>
 </html>

@@ -1,4 +1,95 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+body{
+    background: #222;
+}
+.card{
+    width: 100vw;
+    max-width: 470px;
+    color: aliceblue;
+    border-radius: 8%;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    background-image: url("./images/sunny-bluesky.gif") ;
+    background-size:cover ;
+    margin: 100px auto 100px;
+    text-align: center;
+    padding: 40px 35px;
+    height: 100vh;
+
+}
+.search-box{
+    width: 100%;
+    display: flexbox;
+    align-items: center;
+    justify-content: space-between;
     
+}
+.search-box input{
+    font-size: 18px;
+    color: #222;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px 15px;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    flex: 1;
+}
+.search-box .fa{
+    font-size: 21px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+.search-box button{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.weather h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+.weather h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+.details{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 0%;
+    padding-top: 500px;
+    padding-right: -20px;
+    justify-content: space-between;
+    
+    
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between  ;
+}
+.col img{
+    width: 60px;
+    height: 60px;
+
+}
+
+.humidity,.wind{
+    font-size: 20px;
 }
