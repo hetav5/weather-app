@@ -10,11 +10,12 @@
 
 body {
     background: #222;
+    overflow-y: scroll;
 }
 
 .container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     color: aliceblue;
     background-size: cover;
     display: flex;
@@ -26,7 +27,8 @@ body {
 }
 
 .search-box {
-    width: 750px; 
+    width: 90%; 
+    max-width: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,11 +36,10 @@ body {
     background: #ebfffc;
     border-radius: 5px;
     padding: 10px;
-    
 }
 
 .search-box input {
-    font-size: 18px;
+    font-size: 16px;
     color: #222;
     border-radius: 5%;
     margin: 0 5px;
@@ -48,7 +49,6 @@ body {
     background: #ebfffc;
     flex: 1;
     z-index: 2;
-     
 }
 
 .search-box .fa {
@@ -59,8 +59,7 @@ body {
     height: 100%;
     display: block;
     z-index: 2; 
-    position: relative ;
-
+    position: relative;
 }
 
 .search-box button {
@@ -69,18 +68,18 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .weather h1 {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 900;
     z-index: 2; 
     position: relative;
 }
 
 .weather h2 {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
     z-index: 2; 
     position: relative;
@@ -88,11 +87,12 @@ body {
 
 .details {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
-    margin-top: 400px;
-    z-index: 2; 
+    margin-top: 50px;
+    z-index: 2;
 }
 
 .col {
@@ -101,24 +101,24 @@ body {
     justify-content: center;
     text-align: center;
     z-index: 2; 
-    margin:25px;
-
+    margin: 10px;
 }
 
 .col img {
-    width: 60px;
-    height: 60px;
-    z-index: 2; 
+    width: 50px;
+    height: 50px;
+    z-index: 2;
     margin: 5px;
-    
 }
+
 .details1 {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
-    margin-top: 5px;
-    z-index: 2; 
+    margin-top: 20px;
+    z-index: 2;
 }
 
 .col1 {
@@ -126,23 +126,20 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 2; 
-    margin:25px;
-
+    z-index: 2;
+    margin: 10px;
 }
 
 .col1 img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     z-index: 2;
     margin: 5px;
-    
 }
 
-
-.humidity, .wind, .pressure, .visibility,.sunrise ,.sunset ,.rain, .low, .high, .feelslike  {
-    font-size: 20px;
-    z-index: 2; 
+.humidity, .wind, .pressure, .visibility,.sunrise ,.sunset ,.rain, .low, .high, .feelslike {
+    font-size: 18px;
+    z-index: 2;
     position: relative;
 }
 
@@ -153,6 +150,74 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    z-index: 1; 
+    z-index: 1;
     opacity: 0.5;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .weather h1 {
+        font-size: 60px;
+    }
+
+    .weather h2 {
+        font-size: 40px;
+    }
+
+    .details {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 300px;
+    }
+
+    .details1 {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .col, .col1 {
+        margin: 15px;
+    }
+
+    .humidity, .wind, .pressure, .visibility,.sunrise ,.sunset ,.rain, .low, .high, .feelslike {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 599px) {
+    .container {
+        height: auto; 
+    }
+
+    .search-box {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .weather h1 {
+        font-size: 40px;
+    }
+
+    .weather h2 {
+        font-size: 25px;
+    }
+
+    .details {
+        margin-top: 150px;
+    }
+
+    .col, .col1 {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .col img, .col1 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .humidity, .wind, .pressure, .visibility,.sunrise ,.sunset ,.rain, .low, .high, .feelslike {
+        font-size: 16px;
+    }
 }
