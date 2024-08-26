@@ -154,6 +154,7 @@ body {
     opacity: 0.5;
 }
 
+
 @media (min-width: 600px) and (max-width: 1024px) {
     .weather h1 {
         font-size: 60px;
@@ -177,6 +178,7 @@ body {
 
     .col, .col1 {
         margin: 15px;
+        flex-direction: row;
     }
 
     .humidity, .wind, .pressure, .visibility,.sunrise ,.sunset ,.rain, .low, .high, .feelslike {
@@ -205,6 +207,7 @@ body {
 
     .details {
         margin-top: 150px;
+        flex-direction: column;
     }
 
     .col, .col1 {
@@ -219,5 +222,34 @@ body {
 
     .humidity, .wind, .pressure, .visibility,.sunrise ,.sunset ,.rain, .low, .high, .feelslike {
         font-size: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .weather h1 {
+        font-size: 70px; 
+    }
+
+    .weather h2 {
+        font-size: 50px; 
+    }
+
+    .details, .details1 {
+        flex-direction: row; 
+        justify-content: space-around; 
+        margin-top: 100px; 
+    }
+
+    .col, .col1 {
+        margin: 20px;
+        flex-direction: row; 
+    }
+
+    .humidity, .wind, .pressure, .visibility, .sunrise, .sunset, .rain, .low, .high, .feelslike {
+        font-size: 22px; 
+    }
+
+    .search-box {
+        max-width: 800px; 
     }
 }
